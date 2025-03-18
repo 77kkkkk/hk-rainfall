@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Information Form</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<!-- Menu Button as a Link -->
+<a href="menu.html" class="menu-button">
+  <img src="menu_1.png" alt="Menu Button" class="menu-image" />
+</a>
+
+  <div class="form-wrapper">
+  <div class="form-container">
+    <h2>Travel Information</h2>
+    <form id="travelForm">
+      <!-- Name input (String) -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Travel Month (String) -->
+      <label for="month">Travel Month:</label>
+      <select id="month" name="month" required>
+        <option value="">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+
+      <!-- Email input (String) -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Boolean: Would you like to receive datasets from previous years? -->
+      <label>Would you like to receive datasets from previous years?</label>
+      <input type="radio" id="yes" name="receiveData" value="true" required> Yes
+      <input type="radio" id="no" name="receiveData" value="false" required> No
+
+      <!-- Integer: Years user is interested in (only displayed if "Yes" is selected) -->
+      <label for="years" id="yearsLabel" style="display:none;">Which years are you interested in?</label>
+      <input type="number" id="years" name="years" placeholder="e.g., 2019, 2020" style="display:none;">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Display the summary and recommendation after form submission -->
+    <div id="summary" style="display:none;">
+      <h3>Form Submitted Successfully</h3>
+      <p id="summaryText"></p>
+      <div id="recommendation"></div>
+    </div>
+  </div>
+</div>
+
+  <script src="animation.js"></script>
+</body>
+</html>

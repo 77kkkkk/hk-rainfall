@@ -1,0 +1,295 @@
+/* Main Title Styling */
+.main-title {
+  font-size: 70px; /* Large and elegant font size */
+  font-family: 'Poppins', sans-serif; /* Elegant, modern font */
+  font-weight: 600; /* Slightly bold to make it stand out */
+  color: #2C3E50; /* A dark, elegant color */
+  text-align: center; /* Center the title horizontally */
+  text-transform: uppercase; /* Make the text uppercase for sophistication */
+  letter-spacing: 4px; /* Add some spacing between letters for better readability */
+  margin-top: 100px; /* Add space from the top */
+  margin-bottom: 40px; /* Add space below */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow to enhance depth */
+  transition: all 0.4s ease; /* Smooth transition for hover effects */
+}
+
+
+/* Optional: Add a responsive size change */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 50px; /* Smaller title for smaller screens */
+    letter-spacing: 2px; /* Adjust letter spacing */
+  }
+}
+
+/* Reset Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+.section-heading h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Content Container */
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.section-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.section-content img:hover {
+    transform: scale(1.05);
+}
+
+.section-content p {
+    width: 40%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Graph Container */
+.graph-container {
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 20px;
+    display: flex; /* Makes the buttons appear in a row */
+    flex-wrap: wrap; /* Allows the buttons to wrap if needed */
+    justify-content: center; /* Centers the buttons horizontally */
+}
+
+/* Button Styling */
+button.main-page-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #dc143c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    flex: 1 1 auto; /* Allows buttons to grow and shrink */
+    max-width: 200px; /* Sets a max width for each button */
+}
+
+/* Hover effect for buttons */
+button.main-page-button:hover {
+    background: #8b0000;
+}
+
+/* Style for the menu button */
+.menu-button {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Keep it on the right side */
+  padding: 0; /* Remove any padding */
+  background-color: transparent; /* No background color */
+  color: #333;
+  border: none; /* No border */
+  border-radius: 50%; /* Circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  width: 60px; /* Increase width */
+  height: 60px; /* Increase height */
+  overflow: hidden; /* Ensure nothing overflows the circular button */
+}
+
+/* Hover effect for the button */
+.menu-button:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Focus effect (remove outline) */
+.menu-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Image Styling */
+.menu-image {
+  width: 100%; /* Make the image fill the button */
+  height: 100%; /* Make the image fill the button */
+  object-fit: contain; /* Ensure the image fits without distortion */
+}
+
+/* Optional: Hover effect for image */
+.menu-button:hover .menu-image {
+  opacity: 0.8; /* Reduce opacity slightly on hover */
+}
+
+
+/* Styling for the new menu page and links */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 20px 0;
+  padding: 15px 30px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  width: 250px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-link:hover {
+  background-color: #DB7093;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.menu-link:active {
+  transform: scale(1.02);
+}
+
+/* Add some small animation effects */
+.menu-link, .menu-button {
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+.menu-link:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.menu-link:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.menu-link:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.menu-link:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* This section applies only to the form wrapper, not the whole page body */
+.form-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the form horizontally */
+  align-items: center; /* Centers the form vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px; /* Increase padding for more space */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Set width to make the form larger */
+  text-align: center;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px; /* Increase padding for larger input fields */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #8FBC8F;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4F7A4F;
+}
+
+#summary {
+  margin-top: 20px;
+}
+
+#recommendation {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 16px; /* Increase label font size */
+  text-align: left; /* Left align labels */
+  display: block; /* Make labels block elements */
+  margin-bottom: 8px;
+}
+
+input[type="radio"] {
+  width: auto; /* Adjust radio button size */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="radio"]:not(:last-child) {
+  margin-bottom: 5px; /* Add spacing between radio buttons */
+}
+

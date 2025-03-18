@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall in Hong Kong</title>
+    <link rel="stylesheet" href="design.css"> <!-- Link to CSS -->
+</head>
+<body>
+<!-- Main Page Title -->
+<h1 class="main-title">Rainfall in Hong Kong</h1>
+
+<!-- Menu Button as a Link -->
+<a href="menu.html" class="menu-button">
+  <img src="Menu_1.png" alt="Menu Button" class="menu-image" />
+</a>
+
+<div class="container">
+
+    <!-- Yearly Rainfall Sections -->
+    <div class="section">
+        <div class="section-heading">
+            <h3>Seasonal Rainfall in Hong Kong - 2020</h3>
+        </div>
+        <div class="section-content">
+            <img src="images/seasonal_rainfall_2020.jpg" alt="Rainfall 2020" onclick="toggleFullScreen(this)">
+            <p>The rainfall trend for 2020 shows noticeable seasonal variation, with <b><i>the highest levels occurring in the summer months.</i></b> Winter (blue) remains relatively dry, with only a few instances of minor rainfall. Spring (green) marks an increase in precipitation, with more frequent spikes, peaking just before summer. Summer (pink) exhibits the most intense rainfall events, with several extreme spikes <b><i>exceeding 100mm,</i></b> indicating possible <i>typhoon</i> or <i>monsoon</i> effects. Autumn (purple) also records significant rainfall, with one extreme event surpassing 175mm. This suggests that <b><i>both summer and autumn were the wettest seasons in 2020,</i></b> while winter remained the driest.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h3>Seasonal Rainfall in Hong Kong - 2021</h3>
+        </div>
+        <div class="section-content">
+            <img src="images/seasonal_rainfall_2021.jpg" alt="Rainfall 2021" onclick="toggleFullScreen(this)">
+            <p>The rainfall trend in 2021 follows a similar seasonal pattern to 2020, but with more extreme fluctuations. Winter (blue) again experiences minimal rainfall. Spring (green) shows slight increases, though still relatively low compared to later seasons. Summer (pink) brings several notable rainfall peaks, with multiple instances exceeding 50mm. However, <b><i>the most dramatic rainfall occurs in autumn</i></b> (purple), where <b><i>a major peak surpasses 300mm,</i></b> indicating a heavy storm or <i>typhoon</i> event. The overall trend suggests that while summer was rainy, <b><i>autumn saw the most extreme downpours.</i></b></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h3>Seasonal Rainfall in Hong Kong - 2022</h3>
+        </div>
+        <div class="section-content">
+            <img src="images/seasonal_rainfall_2022.jpg" alt="Rainfall 2022" onclick="toggleFullScreen(this)">
+            <p>The 2022 rainfall trend is characterised by a more balanced distribution across the seasons, though summer and autumn remain dominant. Winter (blue) again records minimal rainfall, while spring (green) shows a gradual increase, with occasional peaks surpassing 50mm. Summer (pink) experiences multiple intense rainfall events, including one extreme spike exceeding 150mm. <b><i>Autumn (purple) continues to bring substantial rainfall, with notable peaks but slightly lower intensity than in 2021.</i></b> This data suggests that while summer was still the wettest season, autumn saw moderate but consistent heavy rainfall.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h3>Seasonal Rainfall in Hong Kong - 2023</h3>
+        </div>
+        <div class="section-content">
+            <img src="images/seasonal_rainfall_2023.jpg" alt="Rainfall 2023" onclick="toggleFullScreen(this)">
+            <p>The rainfall trend for 2023 exhibits a <b><i>distinct shift,</i></b> with autumn becoming the most extreme season. Winter (blue) remains mostly dry, while spring (green) has a few moderate spikes, similar to previous years. Summer (pink) experiences several heavy rainfall events but does not reach the same intensity as autumn. The most significant feature of this graph is the <b><i>extreme rainfall in autumn (purple), where multiple peaks exceed 400mm.</i></b> This suggests that <b><i>2023 experienced one of the most intense autumn rainfall events in recent years,</b></i> possibly due to typhoons or unusually strong monsoon activity.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h3>Seasonal Rainfall in Hong Kong - 2024</h3>
+        </div>
+        <div class="section-content">
+            <img src="images/seasonal_rainfall_2024.jpg" alt="Rainfall 2024" onclick="toggleFullScreen(this)">
+            <p>The 2024 rainfall data presents an <b><i>interesting trend,</i></b> with a clear distinction in seasonal rainfall distribution. Winter once again records minimal precipitation, maintaining its trend as the driest season. Spring sees a gradual increase, with rainfall events becoming more frequent and intense by late May. Summer records significant rainfall, with multiple peaks exceeding 80mm, indicating potential typhoon activity. However, autumn stands out as the most intense season, with numerous extreme spikes reaching over 100mm. This suggests that <b><i>autumn continues to be a dominant season for rainfall in Hong Kong,</i></b> possibly driven by stronger storm systems or shifting weather patterns.</p>
+        </div>
+    </div>
+
+    <!-- Cumulative Rainfall Graph -->
+    <div class="section">
+        <div class="section-heading">
+            <h3>Cumulative Rainfall (2020-2024)</h3>
+        </div>
+        <div class="large-image-container">
+            <img src="images/cumulated_rainfall.jpg" alt="Cumulative Rainfall" onclick="toggleFullScreen(this)">
+        </div>
+    </div>
+
+    <!-- Interactive Rainfall Graph -->
+    <div class="section">
+        <h2>Rainfall Over the Years</h2>
+        <div class="graph-container">
+            <object id="rainfall-graph" data="images/rainfall_graph_2020.svg" type="image/svg+xml" width="800" height="500"></object>
+        </div>
+        <div class="button-container">
+            <button class="main-page-button" onclick="changeGraph('2020')">2020</button>
+            <button class="main-page-button" onclick="changeGraph('2021')">2021</button>
+            <button class="main-page-button" onclick="changeGraph('2022')">2022</button>
+            <button class="main-page-button" onclick="changeGraph('2023')">2023</button>
+            <button class="main-page-button" onclick="changeGraph('2024')">2024</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="animation.js"></script>
+
+</body>
+</html>
